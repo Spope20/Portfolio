@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+  <html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC&family=Nunito&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Spencer Pope, Computer Programmer/Data analyst </title>
+    </head>
+    <nav class="topnav">
+      <ul class="navlist" >
+        <li><a class="active" href="index.html">Home</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="expirence.html">Experience</a></li>
+        <!-- <li><a href="about.html">About</a></li> -->
+        <li><a href="#Contact ">Contact</a></li>
+      </ul>
+      <button class="btn-toggle">Toggle Dark-Mode</button>
+      <script src="script/DarkModeButton.js"></script>
+    </nav>
+    <body>
+    
+    <main>
+      <!-- ***********************  ABOUT / PROFILE  *********************** -->
+      <div class="body-wrap">
+        <div class="main-wrap">
+          <header>
+              <div class="content-wrap">
+                <img class="profile" src="images/profile.png" alt="Spencer Pope headshot">
+                <h1>Spencer Pope</h1>
+                <h2>Data Analyst/Computer Programmer </h2>
+                <p>I am a former Actuarial Science student who has decided to seek a field.</p>
+                <p>After working with coding throughout school and the start of my career I have discovered it's a passion of mine.
+                  I now look to find a career where I can fully invest in that ability while also utilizing my past as a mathematics major.</p>
+                <p>I have spent the past 3 years working on programming various insurance models. 2 years were spent working on models in python and a special programing environment.
+                  the year before that I got to learn APL to work on life models and develop in VBA. During school I got to learn Java, R, SQL and C++ under my degree.
+                  I look forward to enriching these skills even further in the future.</p>
+            </div>
+          </header>
+    
+          <!-- ********************  PROJECTS / PORTFOLIO  ********************* -->
+          <section class="projects">
+            <div class="content-wrap">
+              <h2>Featured Projects</h2>
+              <p class="no-indent">Below is a curated list of projects i have worked on, for more projects go <a src="https://github.com/Spope20?tab=repositories" Target="_self"></a>here.</p>
+      
+              <!-- Copy the whole <section> block to add more projects. -->
+              <section>
+                <h3>North Carolina Air Quality</h3>
+                <div class="image-container">
+
+                    <img class= "project" src="images/taylor-van-riper-edit.jpg" alt="Clear Blue sky with text NC AQI">
+                  <div class="caption-container">
+                    <div class="caption">
+                    "Above the Clouds by Taylor Van Riper from <a href="https://unsplash.com/photos/yQorCngxzwI" target="_blank">unsplash</a>"
+                    </div>
+                  </div>
+                </div>
+                  
+                <p>The NC Air Qual project was a group project that features a machine learning model trained on historical data from North Carolina.
+                This model aims predict the Air Quality Index based on a given set of dates and locations.
+                For this group I handled building the initial ML model and general project managment and cleanup.</p>
+                <a class="btn" href="https://github.com/Spope20/NC_AQI" target="_blank">View Github</a>
+              </section>
+              
+              <section>
+                <h3>Personal Calendar</h3>
+                <div class="image-container">
+
+                    <img class= "project" src="https://images.unsplash.com/photo-1506784365847-bbad939e9335?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1736&q=80" alt="Calendar">
+                  <div class="caption-container">
+                    <div class="caption">
+                    "Back to school with a bullet journal by Estée Janssens from <a href="https://unsplash.com/photos/zni0zgb3bkQ" target="_blank">unsplash</a>"
+                    </div>
+                  </div>
+                </div>
+                  
+                <p>Personal Calendar is a recreation of an excel project I worked on at brighthouse. My team lead requested an excel file to track team pto and avalability.
+                the file would need to be hosted on a company cloud storage solution that opened the file in office 365. when recreating the file i adjusted it for personal use and created a version that utilizes
+                macros unavalable in office 365. the xlsx version would be what you could host on the cloud. The calendar adjust to the current month in the default config and shows 3 months at a time.
+                events that display on the calendar will need to be listed in a table on the Events sheet. old events are flagged in red and for the xlsm version, macros can add events and remove old events</p>
+                <a class="btn" href="https://github.com/Spope20/excel_calendar" target="_blank">View Github</a>
+              </section>
+              
+              <section>
+                <h3>Mapping Earthquakes</h3>
+                <div class="image-container">
+                  <picture>
+                    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Spope20/Mapping_Earthquakes/main/Images/Earthquake_Dark.png" >
+                    <img class= "project imgToggle" src="https://raw.githubusercontent.com/Spope20/Mapping_Earthquakes/main/Images/Earthquake_Light.png" alt="A Map of the california coast with circles of various sizes and colors representing earthquake hypocenters">
+                  </picture>
+                  <div class="caption-container">
+                    <div class="caption">
+                    "A image of the Earthquake mapping site focused on part of California."
+                    </div>
+                  </div>
+                </div>
+                
+                <p>This project features a website with an interactive map made using the <a href="https://mapbox.com" target="_blank">mapbox</a> API. 
+                  The map features 2 buttons to control zoom, a hover menu button on the top right an a legend. From the menu the user can select their prefered view: Street, Satalite, and Dark. 
+                  all the elements of the earthquake mapping can be toggled. the earthquakes are maped with circles that change size and color based on magnitude. 
+                  A legend on the bottom right shows what range of magnitudes each color represents. When the user clicks on an earthquake a infobox will pop up showing magnitude and location</p>
+                <a class="btn" href="https://github.com/Spope20/Mapping_Earthquakes" target="_blank">View Github</a>
+              </section>
+            </div>
+              
+            <!-- End of Project block. -->
+            
+          </section>
+    
+          <!-- ***********************  WORK EXPERIENCE  *********************** -->
+          <section class="work_experience">
+            <div class="content-wrap">
+              <h2>Work Experience</h2>
+              <p>While I am not currently working I have spent the time developing my skills through online courses and improving once i gained in college.
+              I have spent the past 3 years programming in the insurance industry. over the time I have picked up valuable knowledge about code, finance, and work place ethics.
+              my past experience includes.</p>
+              
+              <!-- Copy this whole <section> block to add more jobs. -->
+              <section class="shift">
+                <h3>Actuarial Assistant</h3>
+                <p><b>Company:</b> Brighthosue Financial</p>
+                <p><b>Time:</b> 5/2019-8/2021</p>
+                <p><b>Description:</b> Worked as a member of the annuity pricing team maintaining fixed annuity models and aiding teamates on development.</p>
+                <p><b>Takeaways:</b></p>
+                <ul>
+                  <li>Gained knowledge about various annuity models through Python and Pathwise.</li>
+                  <li>Aided in the development of a new insurance model</li>
+                  <li>Worked closely over Skype and Microsoft Teams with people in a remote office</li>
+                  <li>Peer reviewed various model updates and documentation</li>
+                  <li>Attended several meetings about various parts of the annuity industry and how they all work</li>
+                </ul>
+              </section>
+              
+               <section>
+                <h3>Actuarial Intern</h3>
+                <p><b>Company:</b> Brighthouse financial</p>
+                <p><b>Time:</b> 6/2018-5/2019</p>
+                <p><b>Description:</b> Debugged apl test tools and handled queries from inforce for the tax and test tool team.</p>
+                <p><b>takeaways:</b></p>
+                <ul>
+                  <li>Learned how to spot bugs and test models</li>
+                  <li>Developed new parts of tools in APL</li>
+                  <li>Worked to convert APL models to VBA</li>
+                  <li>Communicated with various teams to solve policy issues</li>
+                </ul>
+              </section>
+               
+
+            </div>
+          </section>
+    
+          <!-- ******************  EDUCATION & CERTIFICATIONS ****************** -->
+          <section class="education">
+            <div class="content-wrap">
+              <h2>Education</h2>
+      
+              <!-- Copy this whole <section> block to add more schools. -->
+                <div class="image-container badge">
+
+                  <img class= "badge" src="https://images.credly.com/size/340x340/images/78512990-1546-41d4-aec1-ae1b416cd355/CE_Cert_Badge_DATA-01.png" alt="Data Bootcamp Badge">
+                <div class="caption-container">
+                  <div class="caption">
+                  "Data Analytics and Visualization Certificate"
+                  </div>
+                </div>
+              </div>
+              <section class="shift">
+                <h3>UNCC Data Analytics Bootcamp</h3>
+                <p><b>Degree:</b> Aquired <a href="https://www.credly.com/badges/1af43566-cc7a-425f-86a6-966df61eb834" target="_blank">certificate</a> in data analytics </p>
+                <p><b>Skills:</b> Excel, VBA, Python, Pandas, Matplotlib, API's, SQL, ETL, SQLAlchemy, HTML, CSS, Javascript,
+                   Plotly, Tableau, R, AWS, Google Collab, Machine learning, Neural Networks, Git</p>
+              </section>
+              
+              <section class="shift">
+                <h3>University of North Carolina - Charlotte</h3>
+                <p><b>Major:</b>Bachlor of arts: Mathmatics, conentration in Actuarial Science</p>
+                <p><b>Minor:</b> Computer Science</p>
+                <p><b>GPA:</b> 3.4</p>
+                <p>passed actuarial exams FM (Financial Mathmatics) and P (Probability) while in school.</p>
+              </section>
+              <!-- End of School block. -->
+            </div>
+          </section>
+          
+          <section class="about_me">
+            <div class="content-wrap">
+              <h2>About Me</h2>
+              
+              <section>
+                <p>Here are some conversation starters about my self outside of work. I am a Charlotte native and love the city.
+                The location of the city means there are lots of activities to do in the surrounding area. the city its self as has a lot to offer for thouse who are looking to explore.
+                </p>
+                <H3>Favorite Places:</H3>
+                <section class="shift">
+                  <ul>
+                    <li>US National White Water Center</li>
+                    <li>Wooden Robot Brewery</li>
+                    <li>Chimney Rock State Park</li>
+                  </ul>
+                </section>
+
+                <H3>Hobbies:</H3>
+                <section class="shift">
+                  <ul>
+                    <li>Disc Golf</li>
+                    <li>Gaming</li>
+                    <li>Baking</li>
+                  </ul>
+                </section>
+
+                <H3>Favorite Travel Destination:</H3>
+                <section class="shift">
+                  <ul>
+                    <li>Maui, Hawaii</li>
+                    <li>Kenai, Alaska</li>
+                    <li>Cabo San Lucas, Mexico</li>
+                  </ul>
+                </section>
+              </section>
+            </div>
+          </section>
+          
+        </div>
+      </div>
+
+      <!-- *****************  CONTACT INFO / SOCIAL MEDIA  ***************** -->
+      <footer>
+        <h2 name="Contact">Let's Keep in Touch!</h2>
+
+        <!-- Social media and contact links. Add or remove any networks. -->
+        <ul>
+          <li><a class="btn" href="mailto:spencer.pope20@gmail.com">spencer.pope20@gmail.com</a></li>
+          <!-- <li><a href="http://yourwebsite.com" target="_blank">yourwebsite.com</a></li> -->
+          <!--<li><a href="#" target="_blank">Twitter</a></li>-->
+          <li><a class="btn" href="https://www.linkedin.com/in/spope20/" target="_blank">LinkedIn</a></li>
+          <!--<li><a href="#" target="_blank">Facebook</a></li>-->
+        </ul>
+      </footer>
+    </main>
+  </body>
+  <body>
+    <nav>
+      
+    </nav>
+    <main></main>
+  </body>
+</html>

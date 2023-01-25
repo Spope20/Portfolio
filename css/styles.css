@@ -1,0 +1,505 @@
+/*
+ *#DBCDC6  - pale silver
+ *#8CB369 - Olivine
+ *#61A0AF - Cadet Blue
+ *#233D4D - Charcoal
+ *#343434 - Jet black
+ */
+
+/* Global Styles*/
+/** {
+    background: #CDBDB6;
+}*/
+/* Layout & Formating */
+ body {
+        margin: 0;
+        padding: 0;
+        font-family: 'Nunito', sans-serif;
+        font-size: 16px;
+        line-height: 1.5;
+    }
+    
+    div.main-wrap {
+        width: 75%;
+        margin: 100px auto;
+    }
+    img {
+        width: 300px;
+    }
+    h1 {
+        font-size: 75px;
+        }
+    h2 {
+        font-size: 30px;
+    }
+    h1, h2{
+        font-family: 'Amatic+SC', cursive;
+        margin: 0;
+    }
+    
+    a:hover {
+        text-decoration: none;
+    }
+    
+    .shift > p {
+        text-indent: 0;
+        margin-left: 30px;
+    }
+    
+    .btn {
+        padding: 6px;
+        border-radius: 4px;
+        margin: 4px;
+        border-width: medium;
+        border-style: solid;
+        display: inline-block;  
+    }
+    .btn:visited {
+        padding: 8px;
+        border-radius: 4px;
+        margin: 4px;
+        border-width: medium;
+        border-style: solid;
+        display: inline-block;
+    }
+    .btn-toggle {
+        position: absolute;
+        top: 50%;
+        right: 1%;
+        transform: translateY(-50%);
+        padding: 6px;
+        border-radius: 0px;
+        margin: 0px;
+        margin-right: 1%;
+        border-width: medium;
+        border-style: solid;
+        display: inline;
+        font-size: 25px;
+    }
+    
+    .content-wrap {
+        width: 90%;
+        margin: 0 auto;
+        padding: 60px 0;
+    }
+
+    .title {
+        width: 90%;
+        margin: 0 auto;
+        padding: 30px 0 0 0;
+    }
+    
+    /* Navigation Bar */
+    .topnav {
+        position: relative;
+        height: 45px;
+        margin: 0 auto;
+        padding: 10px 0;
+        font-size: 24px;
+    }
+    
+    ul.navlist {
+        position: absolute;
+        top: 50%;
+        left: 1%;
+        transform: translateY(-50%);
+        width:25%;
+        text-align: left;
+        vertical-align: middle;
+        margin: 0 0;
+        margin-left: 1%;
+        padding: 0 0;
+        display: inline-block;
+        
+    }
+    ul.navlist > li {
+        display: inline-block;
+    }
+    /* Profile*/
+    
+    /*header {
+        background: #151515;
+    } */
+    img.profile {
+        display: block;
+        margin-left: auto;
+        margin-right:  auto;
+        width: 200px;
+    }
+
+    div.selfie-wrap {
+        overflow: hidden;
+        position: relative;
+        margin-left: 5%;
+        margin-right:  auto;
+        aspect-ratio: 1/1;
+        width: 15%;
+        height: 12%;
+        border-radius: 50%;
+    }
+
+    img.selfie {
+        display: block;
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        margin: 0;
+    }
+    
+    img.niko {
+        display: block;
+        position: absolute;
+        width: 100%;
+        margin: -5% 0 0 0;
+    }
+    
+    /* Projects */
+    div.image-container {
+        overflow: hidden;
+        position: relative;
+        text-align: center;
+        width:40%;
+        min-width: 400px;
+    }
+
+    div.image-container.badge {
+        overflow: hidden;
+        position: relative;
+        text-align: center;
+        width:15%;
+        min-width: 100px;
+    }
+
+    div.image-container.cropped {
+        max-height: 700px;
+    }
+    
+    img.project, img.badge{
+        position:relative;
+        width: 100%;
+        display:block;
+        overflow: hidden;
+        white-space: nowrap;
+        box-sizing: border-box;
+    }
+    
+    div.caption-container {
+        position: absolute;
+        width: 100%;
+        bottom: 0;
+        margin: 0;
+        opacity: 0;
+        transition: opacity 0.10s;
+        padding: 100px 10px 10px 10px;
+        background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75));
+    }
+    div.caption {
+        color: #FFFDFD;
+        position: absolute;
+        left: 5%;
+        width: 90%;
+        bottom: 10%;
+        margin: 0;
+        opacity: 0;
+        transition: opacity 0.10s;
+    }
+    
+    .caption > a {
+        color: #ECFEAA;
+    }
+    
+    .caption-container:hover{
+        opacity: 1; 
+    }
+    .caption-container:hover > .caption{
+        opacity: 1; 
+    }
+    /* Work Experience /
+    .work_experience {
+        background: #383F44;
+    }
+    /* Education */
+    
+    /* Contact Info */
+    footer {
+        background: #233D4D;
+        color: #F7FFF7;
+    }
+    /* About Me */
+    /*footer a{
+        display: inline-block;
+    }*/
+/* default theme: light */
+    body {
+    color: #343434;
+    background: #C1BFC5;
+    }
+    div.body-wrap {
+        background: #C1BFC5;
+    }
+    
+    div.main-wrap {
+        background: #FFFDFD;
+    }
+    h1 {
+        color: #61A0AF;
+        }
+    a{
+        color: #8CB369;
+    }
+    a:visited {
+        color: #61A0AF
+    }
+    .btn {
+        color: #151515;
+        background: #61A0AF;
+        border-color: #233D4D;  
+    }
+    .btn:visited {
+        color: #233D4D;
+        background: #61A0AF;
+        border-color: #233D4D;
+    }
+    .btn-toggle {
+        color: #151515;
+        background: #C1BFC5;
+        border-color: #233D4D;
+    }
+    
+    a:hover {
+        background: rgba(97, 160, 175, 0.8)
+    }
+    
+    /* Navigation Bar */
+    .topnav {
+        background: #0098A3;
+    }
+    ul.navlist > li > a{
+        color: #FFFDFD;
+    }
+    
+    /* Profile*/
+    
+    /* Projects */
+    
+    /* Work Experience */
+    
+    /* Education */
+    
+    /* About Me */
+    
+    /* Contact Info */
+    footer {
+        background: #233D4D;
+        color: #F7FFF7;
+    }
+    /*footer a{
+        display: inline-block;
+    }*/
+
+    /* Dark Theme */
+    body.dark-theme {
+        color: #FFFDFD;
+        background: #151515; 
+    }
+    div.body-wrap.dark-theme {
+        background: #151515;
+    }
+    
+    div.main-wrap.dark-theme {
+        background: #383f44;
+    }
+    h1.dark-theme {
+        color: #00C2D1;
+        }
+    a.dark-theme{
+        color: #ECFEAA;
+    }
+    a.dark-theme:visited {
+        color: #61A0AF
+    }
+    .btn.dark-theme {
+        color: #fffdfd;
+        background: #00c2d1;
+        border-color: #233D4D;
+    }
+    .btn.dark-theme:visited {
+        color: #233D4D;
+        background: #61A0AF;
+        border-color: #233D4D;
+    }
+    
+    .btn-toggle.dark-theme {
+        color: #fffdfd;
+        background: #00c2d1;
+        border-color: #233D4D;
+    }
+    
+    a.dark-theme:hover {
+        background: rgba(97, 160, 175, 0.8)
+    }
+    
+    /* Navigation Bar */
+    .topnav.dark-theme {
+        background: #383f44;
+    }
+    ul.navlist.dark-theme > li > a{
+        color: #ECFEAA;
+    }
+    /* Profile*/
+    
+    /* Projects */
+    
+    /* Work Experience /
+    
+    /* Education /
+
+    */
+    /* Contact Info */
+    footer.dark-theme {
+        background: #233D4D;
+        color: #F7FFF7;
+    }
+
+/* styling for users that default to dark theme */
+@media (prefers-color-scheme: dark) {
+    /*.topnav {
+        padding: 10 px;
+    } */
+    body {
+        color: #FFFDFD;
+        background: #151515; 
+    }
+    div.body-wrap {
+        background: #151515;
+    }
+    
+    div.main-wrap {
+        background: #383f44;
+    }
+    h1 {
+        color: #00C2D1;
+        }
+    a{
+        color: #ECFEAA;
+    }
+    a:visited {
+        color: #61A0AF
+    }
+    .btn {
+        color: #fffdfd;
+        background: #00c2d1;
+        border-color: #233D4D;
+    }
+    .btn:visited {
+        color: #233D4D;
+        background: #61A0AF;
+        border-color: #233D4D;
+    }
+    
+    .btn-toggle {
+        color: #fffdfd;
+        background: #00c2d1;
+        border-color: #233D4D;
+    }
+    
+    a:hover {
+        background: rgba(97, 160, 175, 0.8)
+    }
+    
+    /* Navigation Bar */
+    .topnav {
+        background: #383f44;
+    }
+    ul.navlist > li > a{
+        color: #ECFEAA;
+    }
+    /* Profile*/
+    
+    /* Projects */
+    
+    /* Work Experience /
+    
+    /* Education /
+
+    */
+    /* Contact Info */
+    footer {
+        background: #233D4D;
+        color: #F7FFF7;
+    }
+    /* About Me */
+    /*footer a{
+        display: inline-block;
+    }*/
+    
+    /* setting for light theme toggle */
+    
+    /* global styles */
+    body.light-theme {
+    color: #343434;
+    background: #C1BFC5;
+    }
+    div.body-wrap.light-theme {
+        background: #C1BFC5;
+    }
+    
+    div.main-wrap.light-theme {
+        background: #FFFDFD;
+    }
+    h1.light-theme {
+        color: #61A0AF;
+        }
+    a.light-theme{
+        color: #8CB369;
+    }
+    a.light-theme:visited {
+        color: #61A0AF
+    }
+    .btn.light-theme {
+        color: #151515;
+        background: #61A0AF;
+        border-color: #233D4D;  
+    }
+    .btn.light-theme:visited {
+        color: #233D4D;
+        background: #61A0AF;
+        border-color: #233D4D;
+    }
+    .btn-toggle.light-theme {
+        color: #151515;
+        background: #C1BFC5;
+        border-color: #233D4D;
+    }
+    
+    a.light-theme:hover {
+        background: rgba(97, 160, 175, 0.8)
+    }
+    
+    /* Navigation Bar */
+    .topnav.light-theme {
+        background: #0098A3;
+    }
+    ul.navlist.light-theme > li > a{
+        color: #FFFDFD;
+    }
+    
+    /* Profile*/
+    
+    /* Projects */
+    
+    /* Work Experience */
+    
+    /* Education */
+    
+    /* About Me */
+    
+    /* Contact Info */
+    footer.light-theme {
+        background: #233D4D;
+        color: #F7FFF7;
+    }
+    /*footer a{
+        display: inline-block;
+    }*/
+}     

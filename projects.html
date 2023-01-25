@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+  <html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC&family=Nunito&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Spencer Pope, Computer Programmer/Data analyst </title>
+    </head>
+    <nav class="topnav">
+      <ul class="navlist" >
+        <li><a href="index.html">Home</a></li>
+        <li><a class="active" href="projects.html">Projects</a></li>
+        <li><a href="experience.html">Experience</a></li>
+        <!-- <li><a href="about.html">About</a></li> -->
+        <li><a href="#Contact">Contact</a></li>
+      </ul>
+      <button class="btn-toggle">Toggle Dark-Mode</button>
+      <script src="script/DarkModeButton.js"></script>
+    </nav>
+    <body>
+    
+    <main>
+      <div class="body-wrap">
+        <div class="main-wrap">
+          <div class="content-wrap">
+            <header>
+              <h1>Project Portfolio</h1>
+            </header>
+          </div>
+          <!-- ********************  PROJECTS / PORTFOLIO  ********************* -->
+          <section class="projects">
+            <div class="content-wrap">
+              <section>
+                <h2>North Carolina Air Quality</h2>
+                <div class="image-container cropped">
+
+                    <img class= "project" src="images/taylor-van-riper-edit.jpg" alt="Clear Blue sky with text NC AQI">
+                  <div class="caption-container">
+                    <div class="caption">
+                    "Above the Clouds by Taylor Van Riper from <a href="https://unsplash.com/photos/yQorCngxzwI" target="_blank">unsplash</a>"
+                    </div>
+                  </div>
+                </div>
+                
+                <p><b>Skills:</b> Python, SQL, AWS, Machine Learning, tablue, GIT, Teamwork</p>
+
+                <p>The NC Air Qual project was a group project that features a machine learning model trained on historical data from North Carolina.
+                This model aims predict the Air Quality Index based on a given set of dates and locations.
+                For this group I handled building the initial ML model and general project managment and cleanup.</p>
+                <a class="btn" href="https://github.com/Spope20/NC_AQI" target="_blank">View Github</a>
+              </section>
+              
+              <section>
+                <h2>Personal Calendar</h2>
+                <div class="image-container">
+
+                    <img class= "project" src="https://images.unsplash.com/photo-1506784365847-bbad939e9335?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1736&q=80" alt="Calendar">
+                  <div class="caption-container">
+                    <div class="caption">
+                    "Back to school with a bullet journal by Estée Janssens from <a href="https://unsplash.com/photos/zni0zgb3bkQ" target="_blank">unsplash</a>"
+                    </div>
+                  </div>
+                </div>
+
+                <p><b>Skills:</b> Excel, VBA</p>
+                  
+                <p>Personal Calendar is a recreation of an excel project I worked on at brighthouse. My team lead requested an excel file to track team pto and avalability.
+                the file would need to be hosted on a company cloud storage solution that opened the file in office 365. when recreating the file i adjusted it for personal use and created a version that utilizes
+                macros unavalable in office 365. the xlsx version would be what you could host on the cloud. The calendar adjust to the current month in the default config and shows 3 months at a time.
+                events that display on the calendar will need to be listed in a table on the Events sheet. old events are flagged in red and for the xlsm version, macros can add events and remove old events</p>
+                <a class="btn" href="https://github.com/Spope20/excel_calendar" target="_blank">View Github</a>
+              </section>
+              
+              <section>
+                <h2>Mapping Earthquakes</h2>
+                <div class="image-container">
+                  <picture>
+                    <source class="imgToggle" media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Spope20/Mapping_Earthquakes/main/Images/Earthquake_Dark.png" >
+                    <source class="imgToggle" media="(prefers-color-scheme: light)" srcset ="https://raw.githubusercontent.com/Spope20/Mapping_Earthquakes/main/Images/Earthquake_Light.png" alt="A Map of the california coast with circles of various sizes and colors representing earthquake hypocenters">
+                    <img class= "project imgToggle" src="https://raw.githubusercontent.com/Spope20/Mapping_Earthquakes/main/Images/Earthquake_Light.png" alt="A Map of the california coast with circles of various sizes and colors representing earthquake hypocenters">
+                  </picture>
+                  <div class="caption-container">
+                    <div class="caption">
+                    "A image of the Earthquake mapping site focused on part of California."
+                    </div>
+                  </div>
+                </div>
+                
+                <p><b>Skills:</b> HTML, JavaScript, API</p>
+                
+                <p>This project features a website with an interactive map made using the <a href="https://mapbox.com" target="_blank">mapbox</a> API. 
+                  The map features 2 buttons to control zoom, a hover menu button on the top right an a legend. From the menu the user can select their prefered view: Street, Satalite, and Dark. 
+                  all the elements of the earthquake mapping can be toggled. the earthquakes are maped with circles that change size and color based on magnitude. 
+                  A legend on the bottom right shows what range of magnitudes each color represents. When the user clicks on an earthquake a infobox will pop up showing magnitude and location</p>
+                <a class="btn" href="https://github.com/Spope20/Mapping_Earthquakes" target="_blank">View Github</a>
+              </section>
+              
+              <section>
+                <h2>World Weather Analysis</h2>
+                <div class="image-container" style>
+
+                    <img class= "project resize" src="https://raw.githubusercontent.com/Spope20/World_Weather_Analysis/main/Vacation_Itenerary/WeatherPy_travel_map_Croped.png" alt="Part of a map of a trip along barzils coast">
+                  <div class="caption-container">
+                    <div class="caption">
+                    "Part of a trip planned along brazils coastline with matching arival and depature destination"
+                    </div>
+                  </div>
+                </div>
+
+                <p><b>Skills:</b> Python, API, matplotlib</p>
+                  
+                <p>This project was done to showcase using API calls in python. The primary APIs used were <a href="https://openweathermap.org/api" target="_blank">OpenWeatherMap</a> and 
+                  <a href="https://mapsplatform.google.com/" target="_blank">Google Maps</a>. The OpenMaps API retrives weather data based on city name while the google maps api provides
+                  an interactive map to view the data with. The project maps out a trip to 4 cities chosen from a random list and displays their weather data. 
+                  When using APIs, a config file with a key is required to use the project. API keys are private and thus not provided with the project. 
+                  Images of the project output can be found in the folders with their respective scripts. </p>
+                <a class="btn" href="https://github.com/Spope20/World_Weather_Analysis" target="_blank">View Github</a>
+              </section>
+
+              <section>
+                <h2>PyBer Analysis</h2>
+                <div class="image-container">
+
+                    <img class= "project" src="https://raw.githubusercontent.com/Spope20/PyBer_Analysis/main/analysis/PyBer_fare_summary.png" alt="Line graph">
+                  <div class="caption-container">
+                    <div class="caption">
+                    "A line graph depicting fare data based on time for the project"
+                    </div>
+                  </div>
+                </div>
+                
+                <p><b>Skills:</b> Python, MatPlotLib, Pandas </p>
+
+                <p>The PyBer analysis is a python project that showcases skills in the matplotlib and pandas libraries. The project contains 2 starter data sets that were then manipulated using pandas. 
+                  once the data for a graph was set up the matplotlib library was utilized to create visual reprisentations of the data. overall the project is a simple representation of data.  </p>
+                <a class="btn" href="https://github.com/Spope20/PyBer_Analysis" target="_blank">View Github</a>
+              </section>
+
+              <section>
+                <h2>Cryptocurrencies</h2>
+                <div class="image-container">
+
+                    <img class= "project" src="https://images.unsplash.com/photo-1627538924152-26631c2da638?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=640&q=80" alt="Bitcoin on top of trading chart">
+                  <div class="caption-container">
+                    <div class="caption">
+                    "Two bitcoin on top of trading chart by Kanchanara from <a href="https://unsplash.com/photos/dRgxo-ujT2U" target="_blank">unsplash</a>"
+                    </div>
+                  </div>
+                </div>
+                
+                <p><b>Skills:</b> Python, Machine Learning, ETL </p>
+
+                <p>Cryptocurrencies is a Python project showcasing the use of a unsupervised machine learning model. A premade dataset was loaded into the project then modified for the machine learning model.
+                  The data needed cleaned up in order to work properly with the model. The machine learning model uses the sklearn Kmeans algorithm to generate the data. 
+                  After the data was generated HVplot was used to make a 3d graph of the data for display.
+                </p>
+                <a class="btn" href="https://github.com/Spope20/Cryptocurrencies" target="_blank">View Github</a>
+              </section>
+              
+              <section>
+                <h2>MechaCar Statistical Analysis</h2>
+
+                 <div class="image-container">
+
+                    <img class= "project" src="https://images.unsplash.com/photo-1567789884554-0b844b597180?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2670&q=80" 
+                    alt="Car Production">
+                  <div class="caption-container">
+                    <div class="caption">
+                    "Photo by Lenny Kuhne from <a href="https://unsplash.com/photos/jHZ70nRk7Ns?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" target="_blank">unsplash</a>"
+                    </div>
+                  </div>
+                </div>
+                
+                <p><b>Skills:</b> R, Probability </p>
+
+                <p>MechaCar is a simple statistical analysis in run in R. The project mainly runs a multivariable linear regression analysis on a set of car manufacturing data. The script looks at the data thena outputs intercepts
+                  and summary statistics.
+                </p>
+
+                <a class="btn" href="https://github.com/Spope20/MechaCar_Statistical_Analysis" target="_blank">View Github</a>
+
+              </section>
+              
+              <section>
+                <h2>Pewlett Hackard Analysis</h2>
+                <div class="image-container">
+
+                    <img class= "project" src="https://raw.githubusercontent.com/Spope20/Pewlett-Hackard-Analysis/main/EmployeeDB.png" alt="Database Diagram">
+                  <div class="caption-container">
+                    <div class="caption">
+                    "A diagram showing the csv tables hosted in the project and how they connect"
+                    </div>
+                  </div>
+                </div>
+
+                <p><b>Skills:</b> SQL, PostgreSQL, Database Design </p>
+                  
+                <p>This project was a demonstration of using SQL queries to organize a dataframe and generate summary statistics. The Pewlwtt Hackard project utilized PostgreSQL to import the csv files and run the queries. </p>
+                <a class="btn" href="https://github.com/Spope20/Pewlett-Hackard-Analysis" target="_blank">View Github</a>
+              </section>
+              
+              <section>
+                <h2>Bike Share</h2>
+                <div class="image-container">
+
+                    <img class= "project" src="https://raw.githubusercontent.com/Spope20/bikesharing/main/Resources/dashboard.png" alt="Storyboard for the bikeshare data, featured on the story board is several graphs and numbers" style="max-height:600px;">
+                  <div class="caption-container">
+                    <div class="caption">
+                    "A storyboard from the Analysis"
+                    </div>
+                  </div>
+                </div>
+
+                <p><b>Skills:</b> Tableau </p>
+                  
+                <p>Bike share was a sample of how to use Tableau to import data and generate various graphs and charts. This project is more hands on and visual than most of the projects in this portfolio. The objective for this work
+                  was to make a set of graphs a bike share company could use to analyse their business. most of the graphs made can be viewed on the storyboard above.
+                </p>
+                <a class="btn" href="https://github.com/Spope20/excel_calendar" target="_blank">View Github</a>
+              </section>
+              
+              <section>
+                <h2>UFO Tracker</h2>
+                <div class="image-container">
+
+                    <img class= "project" src="https://raw.githubusercontent.com/Spope20/UFO/main/static/images/nasa.jpg" alt="A view of earth from space">
+                  <div class="caption-container">
+                    <div class="caption">
+                    "Photo from Nasa"
+                    </div>
+                  </div>
+                </div>
+                
+                <p><b>Skills:</b> Javascript, CSS, HTML </p>
+
+                <p>UFO Tracker is a website built to display an understanding of javascript. The website features an interactive table that can be filtered based on several different criteria.
+                  I chose this project since its one of the more tangable end uses.
+                </p>
+                <a class="btn" href="https://github.com/Spope20/excel_calendar" target="_blank">View Github</a>
+              </section>
+            </div>
+              
+            <!-- End of Project block. -->
+            
+          </section>
+          
+        </div>
+      </div>
+
+      <!-- *****************  CONTACT INFO / SOCIAL MEDIA  ***************** -->
+      <footer>
+        <h2>Let's Keep in Touch!</h2>
+
+        <!-- Social media and contact links. Add or remove any networks. -->
+        <ul>
+          <li><a class="btn" href="mailto:spencer.pope20@gmail.com">spencer.pope20@gmail.com</a></li>
+          <!-- <li><a href="http://yourwebsite.com" target="_blank">yourwebsite.com</a></li> -->
+          <!--<li><a href="#" target="_blank">Twitter</a></li>-->
+          <li><a class="btn" href="https://www.linkedin.com/in/spope20/" target="_blank">LinkedIn</a></li>
+          <!--<li><a href="#" target="_blank">Facebook</a></li>-->
+        </ul>
+      </footer>
+    </main>
+  </body>
+  <body>
+    <nav>
+      
+    </nav>
+    <main></main>
+  </body>
+</html>
